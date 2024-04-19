@@ -1,1 +1,3 @@
-f
+ls
+pwd
+find
