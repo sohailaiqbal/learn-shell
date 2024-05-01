@@ -4,7 +4,7 @@ sample2() {
   echo Hello2
  }
 
-Sample2
+sample2
 echo Exit Status of function -$?
 
 echo Hello1
