@@ -4,7 +4,8 @@ sample2() {
   echo Hello2
  }
 
-
+Sample2
+echo Exit Status of function -$?
 
 echo Hello1
 exit
@@ -18,6 +19,6 @@ echo Hello2
 # That information is a number from 0-255
 # Zero considers as success message
 # Non Zero considers as failure message
-
 # we can check this information using a variable which is? Meaning $? can show exit status of return or exit command.
-
+# Return and Exit command by default return value zero, however we can pass the value from 0-255 to those commands
+# and that value will be returned.
