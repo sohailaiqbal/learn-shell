@@ -1,6 +1,6 @@
 sample2() {
   echo Hello1
-  return
+  return 100
   echo Hello2
  }
 
@@ -8,7 +8,7 @@ Sample2
 echo Exit Status of function -$?
 
 echo Hello1
-exit
+exit 200
 echo Hello2
 # Exit the script using exit command
 # Exit the function using return command to main program
