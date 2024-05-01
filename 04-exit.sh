@@ -15,10 +15,14 @@ echo Hello2
 
 # Both commands behaviours is same and it is exiting
 # while exiting both the commands can hold some information and it can show that information
-# That information is called the status. Aslo called as Exit Status
+# That information is called the status. Also called as Exit Status
 # That information is a number from 0-255
 # Zero considers as success message
 # Non Zero considers as failure message
 # we can check this information using a variable which is? Meaning $? can show exit status of return or exit command.
 # Return and Exit command by default return value zero, however we can pass the value from 0-255 to those commands
 # and that value will be returned.
+
+# Any value between 0-255 can be used by script person, however values from 125+ (126 t0 255 are being used by system.
+# so we don't use those valued as author scripts and wer are free to use from 0-125.
+
