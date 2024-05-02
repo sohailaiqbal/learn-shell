@@ -29,10 +29,21 @@
 # Operators:
    # =, == -> Check if both strings are same
    # != -> Check if both the strings are not same
-# Example: [ a = x ] [ a != x ], [ $x==abc ]
+   # -z -> Check if variable is empty
+# Example: [ a = x ] [ a != x ], [ $x==abc ], [ -z "$var"]
+## Note: if any where in expression if you see a variable, Always ensure you give double quotes.
 
 # 2. Number Checks
+# Operators : -eq, -ne, -gt, -ge, -le, lt
+
 # 3. File Checks
+#Operators : [ -a /tmp/abc ]
+
+if [-z "$1"]; then
+  echo inpust is empty
+  exit 1
+fi
+
 
 input=$1
 if [$input = devops]; then
